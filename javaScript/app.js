@@ -14,8 +14,31 @@ player.addEventListener('keypress',(e)=>{
    }
 })
 
-player.focus;  
 
+const start = document.getElementById("start");
+
+
+
+start.onclick=()=>{
+    if(enemy.className === 'enemy')
+    {
+        enemy.classList.remove('enemy');
+        start.value="start"
+
+        player.focus();  
+
+    }else{
+        enemy.classList.add('enemy');
+        start.value="stop"
+        player.focus();  
+
+
+    }
+}
+
+document.onclick=()=>{
+    player.focus();
+}
 
 
 

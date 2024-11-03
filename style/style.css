@@ -28,8 +28,10 @@
     position: relative;
     top:120px;
     left: 480px;
-    animation: enemy 1s infinite linear;
+}
 
+.enemy{
+    animation: enemy 1s infinite linear;
 }
 
 
