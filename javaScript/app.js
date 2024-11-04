@@ -2,6 +2,7 @@ const player = document.getElementById("player");
 const enemy = document.getElementById("enemy");
 const marks = document.getElementById("marks");
 let mark = 0;
+const cloud = document.getElementById('cloud')
 
 
 
@@ -28,12 +29,16 @@ start.onclick=()=>{
     if(enemy.className === 'enemy')
     {
         enemy.classList.remove('enemy');
+        cloud.classList.remove('cloud');
+
         start.value="start"
 
         player.focus();  
 
     }else{
         enemy.classList.add('enemy');
+        cloud.classList.add('cloud');
+
         start.value="stop"
         player.focus();  
 
